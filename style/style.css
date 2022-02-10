@@ -3,6 +3,8 @@
 :root{
     --jscolor: #f2c029;
     --black: #000;
+    --white: #fff;
+    --lightblack: rgb(37, 36, 39);
     --smalltext: 1rem;
     font-family: oswald , sans-serif , verdana , arial;
     --mediumtext: 1.5rem;
@@ -19,6 +21,7 @@
 }
 #header{
     position: relative;
+    z-index: 1000;
     background-color: var(--jscolor);
     display: flex;
     justify-content: space-between;
@@ -47,7 +50,63 @@
     display: none;
     font-size: 2rem;
 }
-
+section{
+    margin-top: 1rem;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid var(--black);
+    padding: 1rem;
+}
+section > h1{
+    font-size: var(--bigtext);
+    color: var(--black);
+    text-shadow: .1rem .1rem .1rem var(--jscolor);
+}
+section > h2{
+    font-size: var(--bigtext);
+    color: var(--jscolor);
+    text-shadow: .1rem .1rem .1rem black;
+}
+.codigo{
+    margin: .5rem 0;
+    min-width: 200px;
+    width: 90%;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    color: var(--black);
+    text-align: left;
+}
+.codigo:hover{
+    background-color: var(--lightblack);
+    border: 2px solid var(--black);
+    cursor: pointer;
+    color: var(--white);
+}
+.purple{
+    color: rgb(126, 32, 170);
+}
+.green{
+    color: rgb(32, 170, 55);
+}
+.blue{
+    color: rgb(41, 190, 200);
+}
+.line{
+    width: 100%;
+    height: 6px;
+    background: var(--jscolor);
+    margin: 1rem 0;
+}
 
 
 @media (max-width: 950px) {
@@ -64,6 +123,7 @@
         flex-wrap: wrap;
         text-align: center;
         clip-path: polygon(0 0 ,100% 0 , 100% 0 ,0 0);
+        background-color: var(--white);
     }
     #header nav.active{
         clip-path: polygon(0 0 ,100% 0 , 100% 100% ,0 100%);

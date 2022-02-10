@@ -14,7 +14,7 @@
     <header id="header">
         <h2><i class="fab fa-js"></i>Learn JS</h2>
         <nav id="navbar">
-            <a href="#formatting"><div></div>formatting</a>
+            <a href="#janelas"><div></div>Janelas</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
@@ -27,7 +27,37 @@
         </nav>
         <div class="fas fa-bars" id="btnnavbar"></div>
     </header>
-
+    <section id="janelas">
+        <h1>Janelas</h1>
+        <h2>alert</h2>
+        <p>O elemento "Alert" é uma caixa de de diálogo que mostra uma mensagem na tela do usuário. </p>
+        <div class="codigo" id="alert">
+            <span class="purple">window</span>.<span class="span green">alert</span>('Olá , mundo !')
+        </div>
+        <div class="line"></div>
+        <h2>confirm</h2>
+        <p>O elemento "Confirm" é bem parecido com o Alert , mas ele funciona de forma diferente , pois o usuário pode escolher entre duas opções : CONFIRMA ou CANCELA . Além disso , o programador ainda pode armazenar a escolha do usuário em uma variável .</p>
+        <div class="codigo" id="confirm">
+            <span class="purple">window</span>.<span class="span green">confirm</span>('Escolha entre : Confirmar ou Cancelar .')
+        </div>
+        <p>O usuário pode armazenar o valor do Confirm da seguinte maneira : </p>
+        <div class="codigo" id="confirm2">
+            <span class="purple">var</span> escolha = <span class="purple">window</span>.<span class="span green">confirm</span>('Escolha entre : Confirmar ou Cancelar .')
+            <br><span class="purple">window</span>.<span class="span green">alert</span>(escolha)
+        </div>
+        <p>Dependendo da escolha do usuário , a variável escolha pode assumir os valores lógicos <span class="blue">true</span> ou <span class="blue">false</span> .</p>
+        <div class="line"></div>
+        <h2>prompt</h2>
+        <p>Já o elemento "Prompt" é capaz de receber do usuário uma String  . Veja o exemplo abaixo : </p>
+        <div class="codigo" id="prompt">
+            <span class="purple">window</span>.<span class="green">prompt</span>('Digite seu nome : ')
+        </div>
+        <p>Assim como o Confirm , o Prompt também pode der armazenado em uma variável . Veja o exemplo abaixo :</p>
+        <div class="codigo" id="prompt2">
+            <span class="purple">var</span> nome = <span class="purple">window</span>.<span class="span green">prompt</span>('Digite seu nome : ')
+            <br><span class="purple">window</span>.<span class="span green">alert</span>(nome)
+        </div>
+    </section>
 
 
 
