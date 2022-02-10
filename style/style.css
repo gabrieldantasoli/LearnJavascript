@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+
+:root{
+    --jscolor: #f2c029;
+    --black: #000;
+    --smalltext: 1rem;
+    font-family: oswald , sans-serif , verdana , arial;
+    --mediumtext: 1.5rem;
+    --bigtext: 2rem;
+}
+*{
+    margin: 0;
+    outline: none;border: none;
+    text-decoration: none;
+    color: var(--black);
+    padding: 0;
+    font-size: var(--smalltext);
+    box-sizing: border-box;
+}
+#header{
+    position: relative;
+    background-color: var(--jscolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+#header > h2{
+    font-size: var(--bigtext);
+    font-weight: 700;
+}
+#header > h2 i{
+    transition: .5s;
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+#header nav{
+    display: flex;
+    justify-content: space-around;
+}
+#header nav a{
+    font-size: var(--smalltext);
+    margin-right: .5rem;
+    font-weight: 500;
+}
+#header > div.fas{
+    display: none;
+    font-size: 2rem;
+}
+
+
+
+@media (max-width: 950px) {
+    #header > div.fas{
+        display: block;
+        transition: .2s;
+    }
+    #header > div.fas:hover{
+        transform: rotate(180deg);
+    }
+    #header nav{
+        position: absolute;
+        top: 100%;left: 0;
+        flex-wrap: wrap;
+        text-align: center;
+        clip-path: polygon(0 0 ,100% 0 , 100% 0 ,0 0);
+    }
+    #header nav.active{
+        clip-path: polygon(0 0 ,100% 0 , 100% 100% ,0 100%);
+    }
+    #header nav a{
+        position: relative;
+        padding: 1rem;
+        margin: .5rem;
+        min-width: 150px;
+        border: 2px solid var(--black);
+        font-size: var(--smalltext);
+    }
+    #header nav div{
+        position: absolute;
+        top: 0;left: 0;
+        background-color: var(--jscolor);
+        width: 5px;
+        height: 100%;
+        z-index: -1;
+    }
+    #header nav a:hover div{
+        width: 100%;
+        transition: .2s;
+    }
+}
