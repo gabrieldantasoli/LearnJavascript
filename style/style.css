@@ -19,7 +19,14 @@
     font-size: var(--smalltext);
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #header{
+    width: 100%;
     position: relative;
     z-index: 1000;
     background-color: var(--jscolor);
@@ -59,9 +66,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     border: 2px solid var(--black);
     padding: 1rem;
 }
@@ -107,7 +111,39 @@ section > h2{
     background: var(--jscolor);
     margin: 1rem 0;
 }
-
+.prop{
+    margin: 1rem 0;
+    font-weight: 600;
+    border: 2px solid rgb(41, 190, 200);
+    padding: 1rem;
+    border-radius: 20px;
+}
+.table{
+    display: grid;
+    gap: .2rem;
+    padding: .2rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    margin: 1rem 0;
+    background-color: var(--jscolor);
+}
+.table div:nth-child(1),.table div:nth-child(2),.table div:nth-child(3){
+    background-color: var(--black);
+    color: var(--white);
+}
+.table div{
+    background-color: var(--white);
+    padding: .1rem;
+    font-size: var(--mediumtext);
+}
+.Not{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.Not div:nth-child(3){
+    background-color: var(--white);
+    color: var(--black);
+}
 
 @media (max-width: 950px) {
     #header > div.fas{
