@@ -56,3 +56,35 @@ document.getElementById('prompt2').addEventListener('click',function() {
     alert(c)
 }) ;
 // Ends Window alerts
+
+// Starts conditions 
+
+document.getElementById('sinal').addEventListener('click',function() {
+    var c = prompt('Qual a cor do sinal ?')
+    if (c == 'vermelho') {
+        alert('Pare o carro !')
+    } ;
+}) ;
+
+document.getElementById('sinal1').addEventListener('click',function() {
+    var c = prompt('Tenho dinheiro sim ou não ?')
+    if (c == 'sim') {
+        alert('Compro a pizza !')
+    }else {
+        alert('Fico com fome !')
+    } ;
+}) ;
+
+document.getElementById('sinal2').addEventListener('click',function() {
+    let c = prompt('Quanto dinheiro tenho em reais ?')
+    c = parseInt(c) ;
+    if (c < 25 && c > 0) {
+        alert('Compro a pizza !')
+    }else if(c >= 25) {
+        alert('Compro a pizza e o refrigerante !')
+    }else {
+        alert('Fico com fome !')
+    } ;
+}) ;
+
+// Ends conditions

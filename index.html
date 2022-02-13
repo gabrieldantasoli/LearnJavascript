@@ -153,13 +153,57 @@
         <p>Como você pode ver , estruturas condicionais estão bastante presente em nossa vida e , no geral , são bem fáceis .</p>
 
         <h2>If</h2>
+        <p>A tecla <span class="blue">if</span> é , basicamente uma estrutura de controle , pois ela determina se um dado evento vai ocorrer . </p>
+        <div class="prop">
+            <p>Exemplo : Se o sinal está verde , atravesse a avenida . Senão , pare e aguarde .</p>
+        </div>
         <img src="images/if.jpeg" alt="if">
+        <p>Note que na imagem acima a estrutura <span class="blue">if</span> poderia checar se o sinal está verde e , consequentemente a parada do carro. Já o <span class="blue">
+            else
+        </span> não seria necessário ser usado , pois o if que determinaria a parada do carro . </p>
+        <div class="codigo" id="sinal">
+            <p><span class="purple">var</span> corDoSinal = <span class="purple">window</span>.<span class="green">prompt</span>('Qual a cor do sinal ?')</p>
+            <p><span class="purple">if</span> <span class="green">(corDoSinal == 'vermelho')</span>{</p>
+            <p class="indent"><span class="purple">window</span>.<span class="green">alert</span>('Pare o carro !')</p>
+            <p>}</p>
+        </div>
 
         <h2>Else</h2>
+        <p>O <span class="blue">else</span> complementa o <span class="blue">if</span> e é usado quando necessitamos que algo ocorra quando o <span class="blue">if</span> resulta em <span class="blue">false</span> . Veja o exemplo abaixo :</p>
+        <div class="prop">
+            <p><span class="blue">Se</span> eu tiver dinheiro , compro uma pizza . <span class="blue">Senão</span> , fico com fome hoje à noite .</p>
+        </div>
         <img src="images/ifelse.jpeg" alt="else">
+        <p>Note que caso eu tenha dinheiro , a estrutura <span class="blue">if</span> retornará <span class="blue">true</span> e poderei comprar a pizza . Caso eu não tenha dinheiro , não poderei comprar a pizza , e ficarei com fome .</p>
+        <div class="codigo" id="sinal1">
+            <p><span class="purple">var</span> dinheiro = <span class="purple">window</span>.<span class="green">prompt</span>('Tenho dinheiro sim ou não ?')</p>
+            <p><span class="purple">if</span> <span class="green">(dinheiro == 'sim')</span>{</p>
+                <p class="indent"><span class="purple">window</span>.<span class="green">alert</span>('Compro a pizza !')</p>
+            <p>} <span class="purple">else</span> {</p>
+            <p class="indent"><span class="purple">window</span>.<span class="green">alert</span>('Fico com fome !')</p>
+            <p>}</p>
+        </div>
+           
+        </div>
 
         <h2>Else If</h2>
+        <p>O <span class="blue">else if</span> é usado quando precisamos de mais de duas estruturas de controle . Veja o exemplo abaixo :</p>
+        <div class="prop">
+            <p>Exemplo : <span class="blue">Se</span> eu estiver com até R$25 , consigo comprar uma pizza . <span class="blue">Se</span> eu estiver com mais de R$25 , comprarei uma pizza e um refrigerante . Caso contrário , ficarei com fome .</p> 
+        </div>
+        <p>Note que caso eu tenha menos de vinte reais , corresponde à estrutura <span class="blue">if</span> . Caso eu tenha mais de vinte e cinco reais , corresponde à estrutura <span class="blue">eslse if</span> e caso eu  não tenha nada corresponde à estrutura <span class="blue">else</span> .</p>
         <img src="images/ifelseifelse.jpeg" alt="else if">
+        <p><span class="blue">Observação :</span> você pode usar quantos <span class="blue">else if</span>'s achar necessário .</p>
+        <div class="codigo" id="sinal2">
+            <p><span class="purple">var</span> dinheiro = <span class="purple">window</span>.<span class="green">prompt</span>('Quanto dinheiro tenho em reais ?')</p>
+            <p><span class="purple">if</span> <span class="green">(dinheiro < 20)</span>{</p>
+                <p class="indent"><span class="purple">window</span>.<span class="green">alert</span>('Compro a pizza !')</p>
+            <p>} <span class="purple">else if</span> <span class="green">(dinheiro > 25)</span> {</p>
+            <p class="indent"><span class="purple">window</span>.<span class="green">alert</span>('Compro a pizza e o refrigerante !')</p>
+            <p>} <span class="purple">else </span>{</p> 
+            <p class="indent"><span class="purple">window</span>.<span class="green">alert</span>('Fico com fome !')</p>
+            <p>}</p>
+        </div>
     </section>
 
 

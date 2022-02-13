@@ -96,6 +96,9 @@ section > h2{
     cursor: pointer;
     color: var(--white);
 }
+.codigo:hover > p{
+    color: var(--white);
+}
 .purple{
     color: rgb(126, 32, 170);
 }
@@ -130,6 +133,9 @@ section > h2{
 .table div:nth-child(1),.table div:nth-child(2),.table div:nth-child(3){
     background-color: var(--black);
     color: var(--white);
+}
+.indent{
+    text-indent: 1rem;
 }
 .table div{
     background-color: var(--white);
