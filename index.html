@@ -14,10 +14,11 @@
     <header id="header">
         <h2><i class="fab fa-js"></i>Learn JS</h2>
         <nav id="navbar">
+            <a href="#oque"><div></div>O que é</a>
             <a href="#janelas"><div></div>Janelas</a>
             <a href="#proposicoes"><div></div>proposição</a>
             <a href="#condicionais"><div></div>Condicionais</a>
-            <a href="#formatting"><div></div>formatting</a>
+            <a href="#switch"><div></div>switch</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
@@ -27,6 +28,16 @@
         </nav>
         <div class="fas fa-bars" id="btnnavbar"></div>
     </header>
+
+    <section id="oque">
+        <div>
+            <img src="images/javascript.png" alt="">
+        </div>
+        <div>
+            <p>A linguagem Javascript , conhecida como "a linguagem web" , é interpretada e baseada em objetos . Apesar de ser a linguagem da web , a linguagem também é usada em vários outros ambientes sem browser, tais como node.js,  Apache CouchDB e Adobe Acrobat.</p>
+            <p><span class="blue">Observação : </span>Javascript não é o mesmo que java.</p>
+        </div>
+    </section>
     <section id="janelas">
         <h1>Janelas</h1>
         <h2>alert</h2>
@@ -206,6 +217,43 @@
         </div>
     </section>
 
+    <section id="switch">
+        <h1>Switch</h1>
+        <h2>Como funciona :</h2>
+        <p>O switch funciona como uma estrutura condicional , assim como o if , mas pode substituir o uso de grandes estruturas <span class="blue"> if ; elif ... else </span>. </p>
+        <p>O <span class="blue">switch</span> recebe um parametro e faz uma sequência de estrutura similares às <span class="blue">if</span> .Veja o exemplo abaixo : </p>
+        <img src="images/switch.png" alt="switch">
+        <p>Note que no switch , os cases funcionam como if . Você deve usar <span class="red">break</span> apos cada case para evitar que sejam execultados mais de um case .</p>
+        <p>Veja um exemplo de switch pelo código abaixo :</p>
+        <div class="codigo">
+            <p><span class="purple">var</span> numero = <span class="purple">window</span>.<span class="green">prompt</span>('Digite um número de 0 a 4 : ')</p>
+            <p><span class="purple">switch</span>( <span class="green">numero</span> ) {</p>
+            <span class="indent"><span class="purple">case</span> 1:</span>
+            <br>
+            <p class="indenti2"><span class="purple">window</span>.<span class="green">alert</span>('Quarto')</p>
+            <span class="indent"><span class="indent red">break</span></span>
+            <br>
+            <span class="indent"><span class="purple">case</span> 2:</span>
+            <br>
+            <p class="indenti2"><span class="purple">window</span>.<span class="green">alert</span>('Segundo')</p>
+            <span class="indent"><span class="indent red">break</span></span>
+            <br>
+            <span class="indent"><span class="purple">case</span> 3:</span>
+            <br>
+            <p class="indenti2"><span class="purple">window</span>.<span class="green">alert</span>('Terceiro')</p>
+            <span class="indent"><span class="indent red">break</span></span>
+            <br>
+            <span class="indent"><span class="purple">case</span> 4:</span>
+            <br>
+            <p class="indenti2"><span class="purple">window</span>.<span class="green">alert</span>('Quarto')</p>
+            <span class="indent"><span class="indent red">break</span></span>
+            <br>
+            <span class="indent"><span class="purple">default</span> :</span>
+            <br>
+            <p class="indenti2"><span class="purple">window</span>.<span class="green">alert</span>('Eu disse um número entre 0 e 4 !')</p>
+
+        </div>
+    </section>
 
 
 

@@ -88,3 +88,27 @@ document.getElementById('sinal2').addEventListener('click',function() {
 }) ;
 
 // Ends conditions
+
+//start switch 
+
+document.querySelector('#switch .codigo').addEventListener('click',function() {
+    let numero = prompt('Digite um número de 0 a 4 :')
+    switch(parseInt(numero)) {
+        case 1:
+            alert('primeiro')
+            break
+        case 2:
+            alert('Segundo')
+            break
+        case 3:
+            alert('Terceiro')
+            break
+        case 4:
+            alert('Quarto')
+            break
+        default:
+            alert('Eu disse um número entre 0 e 4 !')
+    }
+})
+
+//ends switch
