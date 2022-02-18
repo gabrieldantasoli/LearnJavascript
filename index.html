@@ -19,7 +19,7 @@
             <a href="#proposicoes"><div></div>proposição</a>
             <a href="#condicionais"><div></div>Condicionais</a>
             <a href="#switch"><div></div>switch</a>
-            <a href="#formatting"><div></div>formatting</a>
+            <a href="#arrays"><div></div>arrays</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
@@ -255,6 +255,32 @@
         </div>
     </section>
 
+    <section id="arrays">
+        <h1>arrays</h1>
+        <h2>O que são ?</h2>
+        <p>Podemos definir <span class="blue">arrays</span> (também conhecidos como <span class="blue">vetores</span>) de forma básica como uma coleção de variáveis . veja a imagem abaixo : </p>
+        <img src="images/Array.png" alt="arrays">
+        <p>Cada quadradinho é um elemento do array e possui uma proposição ligada à ele . Por exemplo , a posição do gradrado cor salmão é 0 , a posição do quadrado amarelo é 1 e assim sucessivamente .</p>
+        <h2>Como criar :</h2>
+        <p>Para definir um array você pode usar o <span class="green">new</span> <span class="purple">array</span> ou simplesmente usar <span class="green">[]</span> . Veja o código abaixo para maoir aprendizado :</p>
+        <div class="codigo">
+            <p><span class="purple">var</span> array1 = <span class="green">new</span> <span class="purple">array()</span> ;</p>
+            <p><span class="purple">var</span> array2 = <span class="green">[]</span> ;</p>
+        </div>
+        <h2>Como adicionar elementos :</h2>
+        <p><span class="purple">push</span> --> a estrutura push adiciona um elemento ao fim do array . Exemplo : array.<span class="purple">push</span>(2)</p>
+        <p><span class="purple">Por posição</span> --> você também pode adicionar elementos por posição usando array <span class="purple">[posição]</span> .</p>
+        <p><span class="purple">unshift</span> --> O unshift adiciona um elemento ao início do array . Para isso , use array.<span class="purple">unshift()</span> .</p>
+        <h2>Como remover elementos :</h2>
+        <p><span class="purple">pop</span> --> O pop remove o ultimo elemento do array e , para usá-lo , você só precisa digitar array.<span class="purple">pop()</span> .</p>
+        <p><span class="purple">shift</span> --> Diferente do pop , o shift remove o primeiro elemento do array e , para usá-lo , você só precisa digitar array.<span class="purple">shift()</span> .</p>
+        <p><span class="purple">splice</span> --> O splice pode remover elemento de qualquer posição do array . Basta usar array.<span class="purple">splice(posição,quantidade)</span> .</p>
+        <h2>outras funções :</h2>
+        <p><span class="purple">indexOf</span> --> A função indexOf retorna se um elemento está no array . Se o elemento estiver no array , a função retornará a posição do elemento , caso contrário retorna -1 . Para isso , use array.<span class="purple">indexOf(elemento procurado)</span> .</p>
+        <p><span class="purple">sort</span> --> A função sort ordena o array em ordem crescente . Para isso , use array.<span class="purple">sort()</span> .</p>
+        <p><span class="purple">reverse</span> --> A função reverse inverte os elementos do array . Para isso , use array.<span class="purple">reverse()</span> .</p> 
+        <p><span class="purple">concate</span> --> A função concate une arrays . Para isso , use array1.<span class="purple">concate(array2)</span> .</p>
+    </section>
 
 
     <script src="interations/script.js"></script>
