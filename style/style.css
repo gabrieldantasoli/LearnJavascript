@@ -178,6 +178,21 @@ section > h2{
     background-color: var(--white);
     color: var(--black);
 }
+.tabledate{
+    background-color: var(--jscolor);
+    padding: .2rem;
+    margin-top: 1rem;
+}
+.tabledate th{
+    padding: .4rem;
+    color: var(--white);
+    background-color: var(--black);
+    ;
+}
+.tabledate td{
+    background-color: var(--white);
+    padding: .5rem;
+}
 section img{
     width: 80%;
     max-width: 400px;
@@ -227,5 +242,8 @@ section img{
     }
     #oque div:nth-child(1) img{
         width: 70%;
+    }
+    section{
+        width: 100%;
     }
 }
