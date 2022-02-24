@@ -21,7 +21,7 @@
             <a href="#switch"><div></div>switch</a>
             <a href="#arrays"><div></div>arrays</a>
             <a href="#datas"><div></div>datas</a>
-            <a href="#formatting"><div></div>formatting</a>
+            <a href="#match"><div></div>Match</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
@@ -362,10 +362,45 @@
         <div class="codigo">
             <span class="purple">var</span> data = <span class="purple">new</span> <span class="green">Date()</span> ;  
             <br>
-            <span class="purple">var</span> modificar = <span class="purple">new</span> <span class="green">Date()</span> ;  
+            <span class="purple">var</span> modificar = <span class="purple">new</span> <span class="green">Date()</span>    ;  
             <br>
             modificar.<span class="green">setFullYear(</span>data.<span class="green">getFullYear()</span>+2<span class="green">)</span>
         </div>
+    </section>
+
+    <section id="match">
+        <h1>Match</h1>
+        <h2>O que faz?</h2>
+        <p>Pesquisa em uma string por um caractere ou um conjunto deles . Retorna o elemento em forma de array . Veja o exemplo abaixo :</p>        
+        <div class="codigo">
+            <span class="purple">var</span> frase = 'Eu amo muito javascript .' ;
+            <br>
+            <span class="purple">var</span> palavra = frase.match('amo') ;
+            <br>
+            <span class="purple">window</span>.<span class="green">alert</span>(palavra)
+        </div>
+        <h2>modificadores :</h2>
+        <p><span class="blue">i</span> Faz a busca pelo elemento com case sensitive .</p>
+        <p><span class="blue">g</span> Faz a busca por todos os elementos procurados .</p>
+        <div class="codigo">
+            <span class="purple">var</span> palavra = frase.match(/amo/i)
+            <br>
+            <span class="purple">var</span> palavra = frase.match(/amo/g)
+        </div>
+        <p>Note para pesquisar pelo elemento usando modificadores você tem que usar "/" .</p>
+        <h2>Pesquisa por vetores :</h2>
+        <p>Para fazer uma Pesquisa por vetores usando o método match , usamos "[]" . Veja o exemplo</p>
+        <div class="codigo">
+            <span class="purple">var</span> palavra = frase.match(/[oae]/ig)
+            <br>
+            <span class="purple">var</span> palavra = frase.match(/[a-y]/ig)
+        </div>
+        <h2>Pesquisa por exceção:</h2>
+        <p>Para fazer uma pesquisa por exceção usamos "^". Veja o exemplo :</p>
+        <div class="codigo">
+            <span class="purple">var</span> palavra = frase.match(/[^aeiou]/ig)
+        </div>
+        
     </section>
 
     <script src="interations/script.js"></script>
