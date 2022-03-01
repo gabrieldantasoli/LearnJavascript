@@ -21,7 +21,7 @@
             <a href="#switch"><div></div>switch</a>
             <a href="#arrays"><div></div>arrays</a>
             <a href="#datas"><div></div>datas</a>
-            <a href="#match"><div></div>Match</a>
+            <a href="#strings"><div></div>Strings</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
             <a href="#formatting"><div></div>formatting</a>
@@ -368,7 +368,7 @@
         </div>
     </section>
 
-    <section id="match">
+    <section id="strings">
         <h1>Match</h1>
         <h2>O que faz?</h2>
         <p>Pesquisa em uma string por um caractere ou um conjunto deles . Retorna o elemento em forma de array . Veja o exemplo abaixo :</p>        
@@ -400,8 +400,110 @@
         <div class="codigo">
             <span class="purple">var</span> palavra = frase.match(/[^aeiou]/ig)
         </div>
-        
+        <h1>search</h1>
+        <p>O método <span class="green">search</span> retorna a posição de um ou mais caractere determinado como parâmetro .</p>
+        <p>A saída do método é a posição do caractere determinado . Se o caractere não estiver na string , a saída será -1.</p>
+        <p><span class="blue">Exemplo :</span></p>
+
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">search(</span>'amo'<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>replace</h1>
+        <p>O método <span class="green">replace</span> substitui um ou mais caracteres em uma string .</p>
+        <p>O método recebe dois parâmetros : a palavra à ser substituida e a substituição .</p>
+        <p><span class="blue">Exemplo :</span></p>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">replace(</span>'javascript' , 'python'<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>charAt</h1>
+        <p>O método <span class="green">charAt</span> retorna o caractere da posição passada como parâmetro.</p>
+        <p><span class="blue">Exemplo :</span></p>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">charAt(</span>7<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>charCodeAt</h1>
+        <p>Já o método <span class="green">charCodeAt</span> retorna o código do caractere da posição passada .</p>
+        <p><span class="blue">Exemplo :</span></p>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">charCodeAt(</span>7<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>concat</h1>
+        <p>O método <span class="green">concat</span> faz a junção de duas strings .</p>
+        <p><span class="blue">Exemplo :</span></p>
+        <div class="codigo">
+            <span class="purple">var</span> frase1 = "Eu amo programar "
+            <p><span class="purple">var</span> frase2 = "em javascript ."</p>
+            <p><span class="purple">var</span> resultado = frase1.<span class="green">concat(</span>frase2<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>indexOf</h1>
+        <p>O método <span class="green">indexOf</span> retorna a primeira posição inicial do caractere passado como parâmetro.</p>
+        <p><span class="blue">Exemplo :</span></p>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">indexOf(</span>"amo"<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>lastIndexOf</h1>
+        <p>Assim como o método <span class="green">indexOf</span> , O método <span class="green">lastIndexOf</span> retorna a primeira posição do caractere passado como parâmetro , mas a string é iterada de trás para frente .</p>
+        <p><span class="blue">Exemplo :</span></p>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">lastIndexOf(</span>"amo"<span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>localeCompare</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>slice</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>split</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>substr</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>toUpperCase e toLowerCase</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>toString</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
+        <h1>trim</h1>
+        <div class="codigo">
+            <span class="purple">var</span> frase = "Eu amo programar em javascript."
+            <p><span class="purple">var</span> resultado = frase.<span class="green">(</span> <span class="green">)</span></p>
+            <p><span class="purple">window</span>. <span class="green">alert(</span>resultado <span class="green">)</span></p>
+        </div>
     </section>
+
 
     <script src="interations/script.js"></script>
 </body>
